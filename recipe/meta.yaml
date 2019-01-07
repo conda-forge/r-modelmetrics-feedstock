@@ -31,11 +31,13 @@ requirements:
     - {{posix}}zip               # [win]
   host:
     - r-base
+    - llvm-openmp                # [osx]
     - r-rcpp
     - r-data.table
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
+    - llvm-openmp                # [osx]
     - r-rcpp
     - r-data.table
 
