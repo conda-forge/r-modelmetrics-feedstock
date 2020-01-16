@@ -1,4 +1,4 @@
-{% set version = '1.2.2' %}
+{% set version = "1.2.2.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ModelMetrics_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ModelMetrics/ModelMetrics_{{ version }}.tar.gz
-  sha256: 66d6fc75658287fdbae4d437b51d26781e138b8baa558345fb9e5a2df86a0d95
+  sha256: 0cdfde8f13f9329327bfb2171b505197b65b6f93e34048776b305990bd21dc9f
 
 build:
   merge_build_host: True  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
